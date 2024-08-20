@@ -1,0 +1,10 @@
+// Fix chevron icon in additional fees section of checkout summary
+.opc-block-summary .table-totals .totals-mageworx-fee-summary {
+    .amount .price::after {
+        &:extend(.breeze-dropdown-toggler-icon);
+    }
+
+    &.expanded .amount .price::after {
+        &:extend(.breeze-dropdown-toggler-icon-active);
+    }
+}
